@@ -13,7 +13,7 @@ export default function Genres() {
   return (
     <main className="text-center">
       <Navbar title="Genres" />
-      <div className="grid grid-cols-4 gap-4 m-4 md:mx-10 md:my-5">
+      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4 m-4 md:mx-10 md:my-5">
         {data.map((item) => (
           <div key={item.id} className="bg-gray-200 p-4">
             <h2>{item.name}</h2>
