@@ -1,5 +1,8 @@
-<h2 align="center">Technical Test Frontend Challenge</h2>
-
+<div align="center">
+<h2>Technical Test Frontend Challenge</h2>
+<b><a href="https://movie-web-qoin-test.vercel.app/" target="_blank">LIVE SITE</a></b>
+</div>
+  
 ### Table of Contents
 
 - [Requested Pages](#requested-pages)
