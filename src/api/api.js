@@ -14,10 +14,10 @@ export const getGenres = async (setData) => {
     });
 };
 
-export const getList = async (setData, page) => {
+export const getList = async (setData, count) => {
   await axios
     .get(
-      `${API}/movie/upcoming?api_key=${process.env.REACT_APP_API_KEY}&page=${page}`
+      `${API}/movie/upcoming?api_key=${process.env.REACT_APP_API_KEY}&page=${count}`
     )
     .then((res) => {
       // console.log(res.data.results);
@@ -42,3 +42,5 @@ export const getDetails = async (setData, setGenres, setCompanies, id) => {
       alert(err);
     });
 };
+
+export default API;

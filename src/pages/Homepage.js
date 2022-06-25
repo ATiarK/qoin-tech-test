@@ -3,16 +3,19 @@ import { useNavigate } from "react-router-dom";
 import { getList } from "../api/api";
 import Navbar from "../components/Navbar";
 import Button from "../components/Button";
+import { useSelector, useDispatch } from "react-redux";
+import { decrement, increment } from "../redux/reducers/counter";
 
 export default function Homepage() {
   document.title = "List of Movies";
   const [data, setData] = useState([]);
-  const [page, setPage] = useState(1);
+  const { count } = useSelector((state) => state.counter);
+  const dispatch = useDispatch();
   const navigate = useNavigate();
 
   useEffect(() => {
-    getList(setData, page);
-  }, [page]);
+    getList(setData, count);
+  }, [count]);
 
   return (
     <main className="">
@@ -22,15 +25,15 @@ export default function Homepage() {
       </div>
 
       <div className="flex justify-center gap-4 my-4">
-        {page > 1 && (
-          <Button variant="solid" onClick={() => setPage(page - 1)}>
+        {count > 1 && (
+          <Button variant="solid" onClick={() => dispatch(decrement())}>
             Prev
           </Button>
         )}
         <div className="text-center text-blue-500 rounded-md border-2 border-blue-400 items-center">
-          <h2 className="font-semibold px-5 py-2 h-10">{page}</h2>
+          <h2 className="font-semibold px-5 py-2 h-10">{count}</h2>
         </div>
-        <Button variant="solid" onClick={() => setPage(page + 1)}>
+        <Button variant="solid" onClick={() => dispatch(increment())}>
           Next
         </Button>
       </div>
