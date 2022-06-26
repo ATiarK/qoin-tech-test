@@ -4,9 +4,23 @@
 </div>
   
 ### Table of Contents
-
+- [Screenshots](#screenshots)
+  - [List Movie](#list-movie)
+  - [Detail Movie](#detail-movie)
+  - [List Genre](#list-genres)
 - [Requested Pages](#requested-pages)
 - [Built With](#built-with)
+
+### Screenshots
+
+> #### List Movie
+![List Movie](./src/assets/desktop-lists.png)
+
+> #### Detail Movie
+![Details](./src/assets/desktop-details.png)
+
+> #### List Genres
+![Genres](./src/assets/desktop-genres.png)
 
 ### Requested Pages
 
