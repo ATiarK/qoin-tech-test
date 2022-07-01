@@ -1,17 +1,23 @@
 <div align="center">
-<h2>Technical Test Frontend Challenge</h2>
+<h2>SIMPLE MOVIE APP</h2>
 <b><a href="https://movie-web-qoin-test.vercel.app/" target="_blank">LIVE SITE</a></b>
 </div>
   
 ### Table of Contents
-- [Screenshots](#screenshots)
+- [Features](#features)
+- [Preview](#preview)
   - [List Movie](#list-movie)
   - [Detail Movie](#detail-movie)
   - [List Genre](#list-genres)
-- [Requested Pages](#requested-pages)
 - [Built With](#built-with)
 
-### Screenshots
+### Features
+
+- [x] List Genre
+- [x] List Movie
+- [x] Movie Detail
+
+### Preview
 
 > #### List Movie
 ![List Movie](./src/assets/desktop-lists.png)
@@ -21,12 +27,6 @@
 
 > #### List Genres
 ![Genres](./src/assets/desktop-genres.png)
-
-### Requested Pages
-
-- [x] List Genre
-- [x] List Movie
-- [x] Movie Detail
 
 ### Built With
 
